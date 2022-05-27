@@ -30,7 +30,7 @@ notes.post('/', (req, res) => {
 });
 
 
-router.delete('/notes/:id', (req, res) => {
+notes.delete('/notes/:id', (req, res) => {
     console.log(req.params.id);
     const deleteNote = req.params.id;
     readFromFile("db/db.json")
